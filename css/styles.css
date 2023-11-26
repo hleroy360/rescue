@@ -13,16 +13,19 @@ body, header, nav, main, footer, img, h1, h3 {
 
 
 /*Style rules for body and images*/
-body{background-color: #f6eee4;}
+body{
+  background-color: #f6eee4;
+}
 
 img{
   max-width: 100%;
   display: block;
 }
 
-
 /*Style rules for navigation area*/
-nav{background-color: #2a1f14;}
+nav{
+  background-color: #2a1f14;
+}
 
 nav ul{
   list-style-type: none;
@@ -51,11 +54,17 @@ main{
   font-family: Verdana, Arial, sans-serif;
 }
 
-main p{font-size: 1.25em;}
+main p{
+  font-size: 1.25em;
+}
 
-main h3{padding-top: 2%}
+main h3{
+  padding-top: 2%;
+}
 
-main ul{ list-style-type: square;}
+main ul{
+  list-style-type: square;
+}
 
 /*Style rules for class and id selectors*/
 .link{
@@ -71,7 +80,9 @@ main ul{ list-style-type: square;}
   text-align: center;
 }
 
-#contact{text-align: center;}
+#contact{
+  text-align: center;
+}
 
 
 /*Style rules for footer content*/
@@ -83,4 +94,7 @@ footer{
   padding: 1% 0%;
 }
 
-footer a{color: #f3e6d8}
+footer a{
+  color: #f3e6d8;
+  text-decoration: none;
+}
