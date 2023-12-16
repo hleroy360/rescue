@@ -43,7 +43,7 @@ img{
 /*Style rules for header area*/
 
 .mobile h1, .mobile h3 {
-  padding: 2%;
+  padding: 2%;/*come back*/
   text-align: center;
 }
 
@@ -71,7 +71,7 @@ nav li{
   font-size: 1.5em;
   font-family: Geneva, Arial, sans-serif;
   font-weight: bold;
-  /*top-*/
+  border-top: 0.5px #f6eee4;
 }
 
 nav li a {
@@ -85,7 +85,7 @@ nav li a {
 /*Style rules for main content*/
 main{
   padding: 2%;
-  font-family: Verdana, Arial, sans-serif;
+  /*font-family: Verdana, Arial, sans-serif;*/
 }
 
 main p{
@@ -100,7 +100,6 @@ main ul{
   list-style-type: square;
 }
 
-/*Style rules for class and id selectors*/
 .link{
   color: #4d3319;
   text-decoration: none;
@@ -112,6 +111,23 @@ main ul{
   font-size: 1.75em;
   font-weight: bold;
   text-align: center;
+}
+
+#contact, #form h2 {
+  text-align: center;
+}
+
+.tel-link {
+  background-color: #2a1f14;
+  padding: 2%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.tel-link a {
+  color: #f6eee4;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .round {
@@ -141,39 +157,28 @@ figcaption {
   margin-left: 10%;
 }
 
-#contact, #form h2{
+/*#contact, #form h2{
   text-align: center;
-}
-
-.tel-link {
-  background-color: #2a1f14;
-  padding: 2%;
-  width: 80%;
-  margin: 0 auto;
-}
-
-a.tel-link {
-  color: #f6eee4;
-  text-decoration: none;
-  font-weight: bold;
-}
+}*/
 
 
-/*Style rules for form*/
+
+/*Style rules for form elements*/
 
 fieldset, input, textarea {
-  margin-bottom:  2%;
+  margin-bottom: 2%;
 }
 
 
 fieldset legend {
   font-weight: bold;
-  font-size: 1.25em;
+  font-size: 1.3em; /*used to be 1.25em*/
   font-family: 'Lora', serif; /*added*/
 }
 
 label {
   display: block;
+  padding-top: 2%;
   font-family: 'Lora', serif;/*added*/
 }
 #submit {
@@ -228,16 +233,13 @@ footer a{
   }
 
   aside {
-    grid-column: 1/ span 2;
+    grid-column: 1 / span 2;
   }
 
   /*Tablet Viewport: Style rule for form element*/
   form {
     width: 70%;
-    margin-top:0;
-    margin-bottom:0;
-    margin-left:auto;
-    margin-right:auto;
+    margin: 0 auto ;
   }
 }
 
