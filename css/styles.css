@@ -29,11 +29,12 @@ img{
 .mobile {
   display: block;
 }
-
 .tab-desk {
   display:none;
 }
-
+#nav-links {
+  display: none;
+}
 
 .mobile-tablet {
   display: block;
@@ -42,7 +43,13 @@ img{
 
 /*Style rules for header area*/
 
-.mobile h1, .mobile h3 {
+.mobile h1 {
+  padding: 2%;/*come back*/
+  text-align: center;
+  margin: 2% 0 0 3%;
+}
+
+.mobile h3 {
   padding: 2%;/*come back*/
   text-align: center;
 }
@@ -60,26 +67,29 @@ nav{
   background-color: #2a1f14;
 }
 
-nav ul{
-  list-style-type: none;
-  /*margin: 0;*/
-  text-align: center;
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
 }
-
-nav li{
-  display: block;
-  font-size: 1.5em;
-  font-family: Geneva, Arial, sans-serif;
-  font-weight: bold;
-  border-top: 0.5px #f6eee4;
+ 
+.mobile-nav a.nav-icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #f6eee4;
+    padding: 2%;
 }
-
-nav li a {
-  display: block;
-  color: #f6eee4;
-  padding: 0.5em 2em;
-  text-decoration: none;
-}
+ 
+.nav-icon div { 
+    height: 40px;
+    width: 40px;
+    color: #2a1f14; 
+} 
 
 
 /*Style rules for main content*/
@@ -128,6 +138,21 @@ main ul{
   color: #f6eee4;
   text-decoration: none;
   font-weight: bold;
+}
+
+#questions p { 
+  cursor: pointer;
+}
+
+#answer {
+  text-align: center;
+  font-weight: bold;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#answer h2 { 
+  display: none;
 }
 
 .round {
@@ -214,15 +239,28 @@ footer a{
   .mobile {
     display: none;
   }
+  .mobile-nav {
+    display: none;
+  }
   
   /* Tablet Viewport: Style rules for nav area */
+  nav ul{
+    list-style-type: none;
+    /*margin: 0;*/
+    text-align: center;
+  }
   nav li {
     border-top: none;
     display: inline-block;
     font-size: 1.25em;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
   }
   nav li a {
     padding: 0.5em;
+    display: block;
+    color: #f6eee4;
+    text-decoration: none;
   }
 
   /*Grid and aside*/
