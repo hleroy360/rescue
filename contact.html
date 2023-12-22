@@ -11,7 +11,7 @@ Date: 11/17/2023
       <meta charset="utf-8"/>
       <meta name="description" content="Contact us at (814)555-8989 or visit us at 8989 Rescue Drive, Ocala, FL for more information.">
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" type="text/css"href="css/styles.css">
+      <link rel="stylesheet" type="text/css"href="css/styles.min.css">
 
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +24,8 @@ Date: 11/17/2023
     </head>
 
     <body>
+            <!-- Skip to Content Link -->
+            <a class="skip" href="#content">Skip to Content</a>
       <div id="wrapper">
 
         <!-- Mobile Nav -->
@@ -63,7 +65,7 @@ Date: 11/17/2023
         </nav>
   
   <!-- Use the main area to add the main content to the webpage -->
-        <main>
+        <main id="content">
           <div id="contact">
             <h2>You can reach us at:</h2>
             <p class="tel-link round mobile"><a href="tel:8145558989">(814) 555-8989</a></p>
@@ -129,9 +131,16 @@ Date: 11/17/2023
         </main>
   
         <footer>
-          <p>&copy; Copyright 2021. All Rights Reserved.</p>
-          <p><a href="mailto:contact@wildrescues.net">contact@wildrescues.net</a></p>
+          <div class="copyright">
+            <p>&copy; Copyright 2021. All Rights Reserved.</p>
+            <p><a href="mailto:contact@wildrescues.net">contact@wildrescues.net</a></p>
+          </div>
+          <div class="social">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="Facebook Logo"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="images/twitter-logo.png" alt="Twitter Logo"></a>
+          </div>
         </footer>
+
       </div>
 
       <script src="scripts/script.js"></script>
